@@ -17,7 +17,7 @@ def incipit(prev_event):
               "whose echo causes it to sound like a legion.")
         time.sleep(7)
         print("\nRising up, standing on your feet. \n"
-              "Your muscles aching, slowly coming alive,"
+              "Your muscles aching, slowly coming alive, "
               "back from a state of semi-atrophy.")
         time.sleep(5)
         print("\nYou find yourself in a dimly lit field. \nWhat's strange, "
@@ -30,12 +30,12 @@ def incipit(prev_event):
         print("\nYou can head for where the voices seem to be coming from. \n"
               "Or...")
         time.sleep(3)
-        print("\nYou can head for the opposite direction where,"
-              "in the distance, you can make out the silhouette"
+        print("\nYou can head for the opposite direction where, "
+              "in the distance, you can make out the silhouette "
               "of a cathedral spire.\n")
         time.sleep(2)
         print("\nWhat do you choose, o lost one?\nEnter: \n"
-              "- 'a' to head for the voices\n-'b' to head for the cathedral\n"
+              "- 'a' to head for the voices\n- 'b' to head for the cathedral\n"
               "Or if uncertainty paralyses you and shakes your heart...\n"
               "- 'c' to let fate decide.")
         choice = input().strip()
@@ -53,7 +53,7 @@ def incipit(prev_event):
 
 def cathedral():
     cathedral_events = ['cathedral_a', 'cathedral_b']
-    print("\nYou approach the cathedral. The spire silhouette you had spotted
+    print("\nYou approach the cathedral. The spire silhouette you had spotted "
           "from the distance, now reveals itself to be completely golden.")
     time.sleep(5)
     print("\nIn fact, the whole cathedral is made of gold, and the strange dim"
@@ -325,13 +325,13 @@ def main():
     elif choice == 'c':
         random_choice = random.choice([0, 1])
         if random_choice == 0:
-            print("Fate has decreed you shall head for the voices.
-                  And so you head off...")
+            print("Fate has decreed you shall head for the voices. "
+                  "And so you head off...")
             time.sleep(2)
             voices()
         elif random_choice == 1:
-            print("Fate has decreed you shall head for the cathedral.
-                  And so you head off...")
+            print("Fate has decreed you shall head for the cathedral. "
+                  "And so you head off...")
             time.sleep(2)
             cathedral()
 
