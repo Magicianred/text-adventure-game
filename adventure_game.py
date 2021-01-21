@@ -7,6 +7,14 @@ cathedral_visited = False
 
 def incipit(prev_event):
     if prev_event is False:
+        print("Welcome to this short text-based adventure, "
+              "'A field in mourning'.\n"
+              "This handful of scenes was conceived as good practice in "
+              "understanding functions with Python.\n"
+              "It will hopefully be expanded to become a full game.\n"
+              "In the meantime, take delight in these descriptions "
+              "of uncanny events.")
+        time.sleep(10)
         print("\nDead of night. \nYou awaken from a slumber so profound, "
               "feeling as if you have been asleep for aeons. "
               "\nYour senses still numb, your vision blurry.")
