@@ -64,14 +64,15 @@ def cathedral():
     print("\nYou approach the cathedral. The spire silhouette you had spotted "
           "from the distance, now reveals itself to be completely golden.")
     time.sleep(5)
-    print("\nIn fact, the whole cathedral is made of gold, and the strange dim"
+    print("\nIn fact, the whole cathedral is made of gold, "
+          "and the strange dim "
           "light makes it shine so bright, it almost blinds you.")
     time.sleep(5)
-    print("\nSuddenly, just as you were about to start enjoying that roaring"
+    print("\nSuddenly, just as you were about to start enjoying that roaring "
           "silence, the ground starts shaking.")
     time.sleep(5)
-    print("\nFor a moment, it feels as if the whole world should collapse on"
-          "itself, and all that's left of it will be the wreckage of an"
+    print("\nFor a moment, it feels as if the whole world should collapse on "
+          "itself, and all that's left of it will be the wreckage of an "
           "ill-fated planet, forever doomed to orbit the universe.\n"
           "You lose balance and fall to the ground.")
     time.sleep(7)
