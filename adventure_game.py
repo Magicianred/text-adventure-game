@@ -2,10 +2,25 @@ import random
 import time
 import sys
 
+# This is set as False by default, but it's set as True
+# if player visits cathedral, prior to following the voices.
+# If True, when player returns to starting point, new description
+# is automatically triggered.
 cathedral_visited = False
 
 
-def incipit(prev_event):
+def incipit(prev_event=cathedral_visited):
+    """Begin first scene.
+
+    Argument:
+        (bool) prev_event -- by default, this will be 'cathedral_visited'.
+        If set to True, a different description is printed
+        when player returns to starting point.
+
+    Return:
+        (str) choice -- returns player choice first time script is run
+    """
+
     if prev_event is False:
         print("Welcome to this short text-based adventure, "
               "'A field in mourning'.\n"
@@ -60,6 +75,17 @@ def incipit(prev_event):
 
 
 def cathedral():
+    """Run cathedral scene.
+
+    Return:
+        (bool) cathedral_visited -- by default, it will be true
+        once this script runs and if player survives encounter.
+
+        (funct) incipit(cathedral_visited) -- reruns first script,
+        passing the updated argument, which triggers a different
+        description.
+    """
+
     cathedral_events = ['cathedral_a', 'cathedral_b']
     print("\nYou approach the cathedral. The spire silhouette you had spotted "
           "from the distance, now reveals itself to be completely golden.")
@@ -126,6 +152,8 @@ def cathedral():
 
 
 def voices():
+    """Run voices scene."""
+
     print("\nAs you journey through the dark, the strange silhouettes "
           "of several figures become increasingly distinguishable.")
     time.sleep(5)
@@ -176,6 +204,8 @@ def voices():
 
 
 def encounter():
+    """Run encounter scene."""
+
     monsters = ("Mourngolem", "Coffinmask")
     random_encounter = random.choice(monsters)
     if random_encounter == "Mourngolem":
@@ -300,6 +330,8 @@ def encounter():
 
 
 def epilogue():
+    """Run epilogue scene."""
+
     print("\nStripped of the possibility to remember the actions that "
           "led you to this fate, you can only take solace in the realisation "
           "that such entities answer to forces so beyond human understanding, "
@@ -326,6 +358,7 @@ def epilogue():
 
 
 def main():
+    """Begin story."""
     choice = incipit(cathedral_visited)
     if choice == 'a':
         voices()
@@ -345,5 +378,6 @@ def main():
             cathedral()
 
 
+# Block used to trigger main() function
 if __name__ == "__main__":
     main()
