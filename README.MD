@@ -1,4 +1,4 @@
-## Python text-based adventure (aka "interactive function")
+## Python text-based adventure
 
 As per title, a short text-based interactive story written in **Python**.
 Originally one of my project submissions for the "_Introduction to Programming_" nanodegree with [Udacity](www.udacity.com).
