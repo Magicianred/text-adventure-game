@@ -10,7 +10,7 @@ I plan to expand this to be a fully-functional text-adventure along the lines of
 
 ### Current to-do:
 
-- [ ] Add descriptive comments to code
+- [x] Add descriptive comments to code
 - [ ] Decrease repetition by replacing function combo `print('')`/`time.sleep()` with a dedicated function
 - [ ] Give player choice to pick up Platypus effigy
 - [ ] Add at least two more monsters to the story ("Hollowman","Mouldwoman") with personalised descriptions and situations
